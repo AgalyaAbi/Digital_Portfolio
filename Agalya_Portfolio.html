@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agalya — Data Analyst Portfolio</title>
+
+  <!-- Google Font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Agalya_Portfolio.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#hero">Agalya</a>
+        <span class="role">Data Analyst|BI Enthusiast|Data Driver Thinker</span>
+      </div>
+
+      <nav class="nav">
+        <ul id="navbar">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#strengths" class="nav-link">Strengths</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a href="Agalya_Resume.pdf" download="Agalya_Resume.pdf" class="btn small resume-btn">📄 Resume</a>
+        <button id="menu-toggle" class="hamburger" aria-label="Open menu">☰</button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <img class="profile-pic" src="My_PIC_blu.jpg" alt="Agalya profile photo" />
+      </div>
+      <div class="hero-right">
+        <h1>Hi, I'm <span class="accent">Agalya</span> 👋</h1>
+        <p class="lead">Data Analyst • SQL • Excel • Power BI • Python</p>
+                  <div class="hero-ctas">
+                    <a href="mailto:your.email@example.com?subject=Hello&body=I%20want%20to%20connect%20with%20you">
+            <button style="
+              padding:12px 25px;
+              color:black;
+              font-weight: bold;
+              border: none;
+              border-radius: 10px;
+              cursor: pointer;
+              transition: 0.3s;
+               ">
+              Mail Me
+            </button>
+          </a>
+
+         
+          <a class="btn outline" href="https://www.linkedin.com/in/agalya-angamuthuanalyst/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+        <p class="meta">Tagore Institute of Engineering & Technology — B.E. CSE</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m a Computer Science student and data analyst who builds dashboards, writes SQL queries, and creates Excel reports that turn raw data into actionable insights. I practise SQL on platforms like Mimo and CodeChef and build projects across BI and analytics.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>SQL</h4>
+          <div class="bar"><div style="width:90%"></div></div>
+        </div>
+        <div class="skill">
+          <h4>Excel & Power Query</h4>
+          <div class="bar"><div style="width:88%"></div></div>
+        </div>
+        <div class="skill">
+          <h4>Power BI</h4>
+          <div class="bar"><div style="width:82%"></div></div>
+        </div>
+        <div class="skill">
+          <h4>Python (Pandas)</h4>
+          <div class="bar"><div style="width:78%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Strengths -->
+  <section id="strengths" class="section">
+    <div class="container">
+      <h2>Core Strengths</h2>
+      <ul class="strengths-list">
+        <li>🔍 Strong analytical & problem-solving skills</li>
+        <li>📊 Expertise in SQL, Excel & Power BI for analytics</li>
+        <li>🤝 Collaborative team player with leadership qualities</li>
+        <li>🚀 Quick learner — adaptive & self-driven</li>
+        <li>📝 Clear communicator — presenting insights to stakeholders</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card" onclick="openModal('modal1')">
+          <img src="food_order_preview.jpg" alt="Food Orders SQL" loading="lazy"/>
+          <div class="p-body">
+            <h3>Food Orders SQL Analysis</h3>
+            <p>SQL analysis of food orders to surface revenue drivers, peak hours & top dishes.</p>
+          </div>
+        </article>
+
+        <article class="project-card" onclick="openModal('modal2')">
+          <img src="2-bank-loan.jpg" alt="Bank Loan Report" loading="lazy"/>
+          <div class="p-body">
+            <h3>Bank Loan Report (Excel)</h3>
+            <p>Excel dashboard with pivot tables, slicers and borrower segmentation for loan risk analysis.</p>
+          </div>
+        </article>
+
+        <article class="project-card" onclick="openModal('modal3')">
+          <img src="cust_retent.jpg" alt="Customer Retention Dashboard" loading="lazy"/>
+          <div class="p-body">
+            <h3>Customer Retention Dashboard (Power BI)</h3>
+            <p>Interactive retention & churn analysis with cohort views and retention KPIs.</p>
+          </div>
+        </article>
+
+        <article class="project-card" onclick="openModal('modal4')">
+          <img src="port_img2.jpg" alt="Sales Dashboard" loading="lazy"/>
+          <div class="p-body">
+            <h3>Sales & Profit Dashboard</h3>
+            <p>Sales performance dashboard with category/region filters and margin analysis.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modals -->
+  <div id="modal1" class="modal"><div class="modal-content">
+    <button class="close" onclick="closeModal('modal1')">✕</button>
+    <h3>Food Orders SQL Analysis</h3>
+    <img src="food_order_preview.jpg" alt="">
+    <p>Analyzed 5000+ food delivery records; wrote optimized SQL queries to extract peak hours, revenue per item, repeat-customer behavior and performed RFM segmentation.</p>
+    <div class="modal-actions">
+      <a class="btn" href="https://www.linkedin.com/in/agalya-angamuthuanalyst/" target="_blank" rel="noreferrer">View on LinkedIn</a>
+      <a class="btn outline" href="files/food_orders_sql_notes.pdf" download>Download Notes</a>
+    </div>
+  </div></div>
+
+  <div id="modal2" class="modal"><div class="modal-content">
+    <button class="close" onclick="closeModal('modal2')">✕</button>
+    <h3>Bank Loan Report (Excel)</h3>
+    <img src="2-bank-loan.jpg" alt="">
+    <p>Excel report with pivots, slicers and visual summary for loan approvals and risk scoring. Includes borrower segmentation and KPI monitoring.</p>
+    <div class="modal-actions">
+      <a class="btn" href="https://www.linkedin.com/in/agalya-angamuthuanalyst/" target="_blank" rel="noreferrer">View on LinkedIn</a>
+      <a class="btn outline" href="files/bank_loan_report_sample.xlsx" download>Download Sample</a>
+    </div>
+  </div></div>
+
+  <div id="modal3" class="modal"><div class="modal-content">
+    <button class="close" onclick="closeModal('modal3')">✕</button>
+    <h3>Customer Retention Dashboard (Power BI)</h3>
+    <img src="cust_retent.jpg" alt="">
+    <p>Power BI dashboard (uploaded as PBIX on LinkedIn). Shows cohort retention, churn drivers and action items to improve LTV.</p>
+    <div class="modal-actions">
+      <a class="btn" href="https://www.linkedin.com/in/agalya-angamuthuanalyst/" target="_blank" rel="noreferrer">View on LinkedIn</a>
+      <a class="btn outline" href="files/Customer Retention.pbix" download>Download PBIX</a>
+    </div>
+  </div></div>
+
+  <div id="modal4" class="modal"><div class="modal-content">
+    <button class="close" onclick="closeModal('modal4')">✕</button>
+    <h3>Sales & Profit Dashboard</h3>
+    <img src="port_img2.jpg" alt="">
+    <p>Dashboard analyzing discounts, category contribution, and forecasted trends to optimize pricing and promotions.</p>
+    <div class="modal-actions">
+      <a class="btn" href="https://www.linkedin.com/in/agalya-angamuthuanalyst/" target="_blank" rel="noreferrer">View on LinkedIn</a>
+      <a class="btn outline" href="files/sales_dashboard_sample.pdf" download>Download Report</a>
+    </div>
+  </div></div>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+      <p><strong>B.E. Computer Science & Engineering</strong><br>
+      Tagore Institute of Engineering & Technology — Anna University Affiliate-Salem Tn(2022-2026)</p>
+      <p><strong>Higher Secondary Schooling</strong><br>
+      Paavendhar Matric Higher Secondary School-Salem TN(2020-2022)</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Let’s connect! I’m open to internships, projects and collaborations.</p>
+
+      <div class="contact-links">
+        <a class="contact-item" href="mailto:agalyaagalya9597@gmail.com">📧 agalyaagalya9597@gmail.com</a>
+        <a class="contact-item" href="https://github.com/agalyaabi" target="_blank" rel="noreferrer">💻 github.com/AgalyAbi</a>
+        <a class="contact-item" href="https://www.linkedin.com/in/agalya-angamuthuanalyst/" target="_blank" rel="noreferrer">🔗 linkedin.com/in/agalya-angamuthuanalyst</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Agalya • Built with HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <script src="Agalya_Portfolio.js"></script>
+</body>
+</html>
