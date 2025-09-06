@@ -177,7 +177,7 @@ section h2 { margin:0 0 12px; color:var(--accent); font-size:1.4rem; }
         }
         .arrow {
             font-size: 2rem;
-            color: #333;
+            color: #FFFFFF;
             background: none;
             border: none;
             cursor: pointer;
@@ -295,4 +295,5 @@ section h2 { margin:0 0 12px; color:var(--accent); font-size:1.4rem; }
   h1 { font-size:1.4rem; }
   .profile-pic{ width:120px; height:120px; }
 }
+
 
