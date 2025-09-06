@@ -89,38 +89,6 @@ menuToggle.addEventListener('click', () => {
 window.addEventListener('resize', () => {
   if (window.innerWidth > 720) navbar.style.display = '';
 });
-
-// ====== Modal functions ======
-function openModal(id) {
-  const modal = document.getElementById(id);
-  if (modal) modal.style.display = 'flex';
-  // Lock scroll
-  document.body.style.overflow = 'hidden';
-}
-function closeModal(id) {
-  const modal = document.getElementById(id);
-  if (modal) modal.style.display = 'none';
-  document.body.style.overflow = '';
-}
-
-// Close modal on background click
-window.addEventListener('click', (e) => {
-  document.querySelectorAll('.modal').forEach(modal => {
-    if (e.target === modal) {
-      modal.style.display = 'none';
-      document.body.style.overflow = '';
-    }
-  });
-});
-
-// ESC key closes modals
-window.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
-    document.body.style.overflow = '';
-  }
-});
-
 const carouselSlide = document.getElementById('carouselSlide');
     const images = document.querySelectorAll('.carousel-slide img');
     const prev = document.getElementById('prev');
@@ -168,4 +136,37 @@ const carouselSlide = document.getElementById('carouselSlide');
         carouselSlide.style.transition = 'none';
         carouselSlide.style.transform = 'translateX(' + (-newSize * counter) + 'px)';
     });
+
+
+
+// ====== Modal functions ======
+function openModal(id) {
+  const modal = document.getElementById(id);
+  if (modal) modal.style.display = 'flex';
+  // Lock scroll
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(id) {
+  const modal = document.getElementById(id);
+  if (modal) modal.style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+// Close modal on background click
+window.addEventListener('click', (e) => {
+  document.querySelectorAll('.modal').forEach(modal => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+  });
+});
+
+// ESC key closes modals
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
+    document.body.style.overflow = '';
+  }
+});
 
