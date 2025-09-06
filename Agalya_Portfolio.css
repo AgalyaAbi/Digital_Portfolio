@@ -141,67 +141,6 @@ section h2 { margin:0 0 12px; color:var(--accent); font-size:1.4rem; }
 }
 .strengths-list li:hover { transform:translateY(-6px); box-shadow:var(--shadow); }
 
-        /* Carousel Section */
-        .carousel-wrapper {
-            position: relative;
-            max-width: 700px;
-            margin: 0 auto 40px auto;
-        }
-        .carousel-container {
-            width: 100%;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            background-color: #fff;
-            position: relative;
-        }
-        .carousel-slide {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-        .carousel-slide img {
-            width: 100%;
-            object-fit: contain;
-            flex-shrink: 0;
-            max-height: 400px;
-        }
-        .carousel-buttons {
-            position: absolute;
-            top: 50%;
-            width: calc(100% + 40px);
-            left: -20px;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-            pointer-events: none;
-        }
-        .arrow {
-            font-size: 2rem;
-            color: #FFFFFF;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 50%;
-            pointer-events: auto;
-            transition: color 0.2s;
-        }
-        .arrow:hover {
-            color: #000;
-        }
-        @media (max-width: 768px) {
-            .arrow {
-                font-size: 1.5rem;
-                padding: 8px;
-            }
-        }
-        @media (max-width: 480px) {
-            .arrow {
-                font-size: 1.2rem;
-                padding: 6px;
-            }
-        }
-
         /* Navigation Section */
         .nav-container {
             max-width: 700px;
@@ -210,7 +149,7 @@ section h2 { margin:0 0 12px; color:var(--accent); font-size:1.4rem; }
         .nav-container h2 {
             margin-bottom: 20px;
             font-size: 1.5rem;
-            color:#FFFFFF;
+            color:#fff;
         }
         .nav-grid {
             display: grid;
@@ -295,6 +234,7 @@ section h2 { margin:0 0 12px; color:var(--accent); font-size:1.4rem; }
   h1 { font-size:1.4rem; }
   .profile-pic{ width:120px; height:120px; }
 }
+
 
 
 
