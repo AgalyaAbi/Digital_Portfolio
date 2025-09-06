@@ -120,3 +120,52 @@ window.addEventListener('keydown', (e) => {
     document.body.style.overflow = '';
   }
 });
+
+const carouselSlide = document.getElementById('carouselSlide');
+    const images = document.querySelectorAll('.carousel-slide img');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+
+    let counter = 1;
+    const size = images[0].clientWidth;
+
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+    function updateSlide() {
+        const newSize = images[0].clientWidth;
+        carouselSlide.style.transition = 'transform 0.5s ease-in-out';
+        carouselSlide.style.transform = 'translateX(' + (-newSize * counter) + 'px)';
+    }
+
+    next.addEventListener('click', () => {
+        if (counter >= images.length - 1) return;
+        counter++;
+        updateSlide();
+    });
+
+    prev.addEventListener('click', () => {
+        if (counter <= 0) return;
+        counter--;
+        updateSlide();
+    });
+
+    carouselSlide.addEventListener('transitionend', () => {
+        const newSize = images[0].clientWidth;
+        if (images[counter].alt === "Project 1" && counter === images.length - 1) {
+            carouselSlide.style.transition = 'none';
+            counter = 1;
+            carouselSlide.style.transform = 'translateX(' + (-newSize * counter) + 'px)';
+        }
+        if (images[counter].alt === "Project 7" && counter === 0) {
+            carouselSlide.style.transition = 'none';
+            counter = images.length - 2;
+            carouselSlide.style.transform = 'translateX(' + (-newSize * counter) + 'px)';
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        const newSize = images[0].clientWidth;
+        carouselSlide.style.transition = 'none';
+        carouselSlide.style.transform = 'translateX(' + (-newSize * counter) + 'px)';
+    });
+
